@@ -1,5 +1,5 @@
 # SpeechExpression
-A website to help you improve public speaking!
+A website to help you improve public speaking! (Note: website currently only works in Chrome)
 
 Website: https://speechexpression.herokuapp.com
 
