@@ -1,0 +1,119 @@
+:root {
+  --bg: white;
+  --text: black;
+  --bg-nav: rgb(167, 165, 165);
+  --text-nav: white;
+  --bttn-nav:rgb(82, 82, 82);
+}
+/*========================================*/
+.App {
+  text-align: center;
+  
+  background-color: var(--bg);
+  color: var(--text);
+  position: relative;
+  min-height: 100%;
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: var(--text-nav);
+}
+/*
+Dropdown menu: https://www.w3schools.com/howto/howto_css_dropdown.asp
+*/
+.App-logo {
+  width: 100%;
+  padding-left: 15%;
+}
+.dropBttn {
+  border: none;
+  background-color: none;
+  padding: none;
+  
+}
+
+#script {
+  width: "100%";
+  height: "100%";
+  border: "none";
+  outline: "none";
+  outline-color: var(--bg);
+  color:var(--text);
+  background-color:var(--bg);
+}
+/*
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+*/
+.container-fluid{
+  padding: 0;
+  min-height: 100vh;
+}
+.navbar {
+  top: 0;
+  left: 0;
+  width: 100%;
+  position: sticky;
+  text-align: center;
+  
+  background-color: var(--bg-nav);
+  justify-content: center;
+  font-size: calc(5px + 2vmin);
+  color: var(--text-nav);
+  z-index: 1;
+}
+.navbar .thin {
+ width: 13%;
+}
+.navbar Link {
+  text-decoration: none;
+  color:var(--text-nav);
+}
+.navbar button {
+  color:var(--text-nav);
+  background-color: var(--bttn-nav);
+}
+
+.summary-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 5px;
+  margin: 10px auto;
+}
+.summary-table tr td{
+  width: 37%;
+}
+.summary-table tr .thin{
+  width: 26%;
+}
+/*
+Help text tooltips
+Helpful Source: https://stackoverflow.com/questions/11683620/how-to-display-pop-up-text-on-mouse-hover
+*/
+.tip {
+  position: relative;
+}
+.tip .tip-content {
+  display: none;
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  right: 5%;
+  color: var(--text);
+  background-color: var(--bg);
+  padding: .5em;
+}
+.tip:hover .tip-content {
+  display: block;
+}
+/*========================================================================*/
+

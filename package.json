@@ -1,0 +1,24 @@
+{
+  "name": "speechexpression",
+  "version": "1.0.0",
+  "description": "1. Clone the project 2. Make sure npm and Node.js are installed 3. Navigate into client and run:",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "client": "cd client && npm start",
+    "server-install": "npm install",
+    "client-install": "cd client && npm install",
+    "install-all": "concurrently \"npm run server-install\"  \"npm run client-install\"",
+    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
+  },
+  "dependencies": {
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.tamu.edu:zhuodannychen/CSCE315-Project3.git"
+  },
+  "author": "",
+  "license": "ISC"
+}
